@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "id": "2",
+      "name": "Test",
+      "email": "test@gmail.com",
+      "phone": "9821632011"
+    },
+    {
+      "id": "5",
+      "name": "Demo1",
+      "email": "demo1@gmail.com",
+      "phone": "07698216320"
+    },
+    {
+      "id": "6",
+      "name": "DemoTest",
+      "email": "Demotest@gmail.com",
+      "phone": "07698216320"
+    },
+    {
+      "id": "5",
+      "name": "TestDemo",
+      "email": "testdemo@gmail.com",
+      "phone": "6320176982",
+      "errors": {}
+    },
+    {
+      "id": "6",
+      "name": "TestTest",
+      "email": "testtest@gmail.com",
+      "phone": "0123456789",
+      "errors": {}
+    }
+  ]
+}

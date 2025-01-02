@@ -1,0 +1,226 @@
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 5px solid #5c2c90;
+  }
+  
+  /* Title styling */
+  .title {
+    display: inline-block;
+    color: #5c2c90;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  /* Table container styling */
+  .table-container {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Button styling */
+  .btn {
+    /* background-color: #5c2c90;  */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .btn.btn-add{
+    background-color: #5c2c90;
+  }
+  
+  /* Active state for button */
+  .btn.btn-add:active {
+    background-color: #3a185a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(0.98);
+  }
+  .btn.btn-back{
+    background-color: red;
+  }
+  /* Table styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table header styling */
+  .table thead {
+    background-color: #5c2c90;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .table thead th {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .btn.btn-save{
+    background-color: #5c2c90;
+    color: #fff;
+  }
+  /* Table row styling */
+  .table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .table tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  /* Table data cell styling */
+  .table tbody td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Adjust action buttons inside the table */
+  .table tbody td a.btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .errorMsg{
+    color:#c9302c;
+    text-align:left
+  }
+  .btns{
+    margin-top: 20px;
+    text-align: left;
+  }
+  .details{
+    text-align: left;
+  }
+  .table tbody td a.btn-info {
+    background-color: #5bc0de;
+    color: #fff;
+  }
+  
+  .table tbody td a.btn-info:hover {
+    background-color: #31b0d5;
+  }
+  
+  .table tbody td a.btn-primary {
+    background-color: #0275d8;
+    color: #fff;
+  }
+  
+  .table tbody td a.btn-primary:hover {
+    background-color: #025aa5;
+  }
+  
+  .table tbody td a.btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .table tbody td a.btn-danger:hover {
+    background-color: #c9302c;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4b0082;
+    box-shadow: 0px 0px 5px #4b0082;
+  }
+  /* Responsive styles for tablets (screen width 768px and below) */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .btn.btn-add {
+      font-size: 14px;
+      padding: 8px 16px; 
+    }
+  
+    .table thead {
+      display: none;
+    }
+  
+    .table tbody td {
+      display: block;
+      text-align: center;
+      position: relative;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  
+    .table tbody td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  
+  /* Responsive styles for mobile devices (screen width 480px and below) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    .title {
+      font-size: 14px;
+    }
+  
+    .btn.btn-add {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
